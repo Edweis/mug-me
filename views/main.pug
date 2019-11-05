@@ -1,0 +1,52 @@
+-
+  var defaults = {
+    title: 'NO TITLE!',
+    
+    username:'IonicaBizau',
+    description:'Programmer, Geek, Pianist, College Dropout, Learner, Mentor, Dreamer, Vegetarian, Jesus follower, Founder and CEO of @Bloggify',
+
+    starCount:'2.7k',
+    followerCount:'2.3k',
+    commitCount:'9.8M',
+
+    speed:'230c/d',
+    organizations: [
+    'softwarescales',
+    'BibleJS',
+    'Bloggify',
+    'TmuxOS',
+    'LienJS',
+    'nodejs',
+    'azsmr',
+    'GitHubBounty',
+    'Carlisa', 
+    'Share-Term',
+    'IonicaBizauKitchen',
+    'nteract',
+    'jxmono',
+    'IonicaBizauTrash',
+    'BrainJS',
+    'nice-registry'
+    ]
+  }
+
+
+html 
+  head
+    title My Site - #{title || defaults.title}
+  body
+    .container
+      .leftContainer
+        p image
+      .RightContainer
+          .header
+            p.username #{username || defaults.username}
+            p.description #{description || defaults.description}
+          .glories
+            p.stars #{starCount || defaults.starCount}
+            p.followers #{followerCount || defaults.followerCount}
+            p.commits #{commitCount || defaults.commitCount}
+          .performances
+            p.speed #{speed || defaults.speed}
+            p.organizations= (organizations || defaults.organizations).join(', ')
+            

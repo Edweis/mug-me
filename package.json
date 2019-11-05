@@ -1,0 +1,41 @@
+{
+  "name": "mugme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edweis/mugme.git"
+  },
+  "keywords": [
+    "mugme"
+  ],
+  "author": "edweis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edweis/mugme/issues"
+  },
+  "homepage": "https://github.com/Edweis/mugme#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "path": "^0.12.7",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  }
+}
